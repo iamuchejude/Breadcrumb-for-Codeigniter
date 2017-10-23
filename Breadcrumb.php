@@ -17,18 +17,18 @@
     private $CI;
 
     public function __construct() {
-      $CI =& get_instance();
-      $CI->load->library('url');
-      $CI->load->config('breadcrumb', TRUE);
-      $this->include_home = $CI->config->item('includeHome', 'breadcrumb');
-      $this->container_open = $CI->config->item('containerOpen', 'breadcrumb');
-      $this->container_close = $CI->config->item('containerClose', 'breadcrumb');
-      $this->divider = $CI->config->item('divider', 'breadcrumb');
-      $this->crumb_open = $CI->config->item('crumbOpen', 'breadcrumb');
-      $this->crumb_close = $CI->config->item('crumbClose', 'breadcrumb');
-      if(isset($this->_include_home) && (strlen($this->_include_home) > 0)) {
-        $this->_breadcrumb[] = array('title'=>$this->_include_home, 'href'=>rtrim(base_url(),'/'));
-      }
+        $CI =& get_instance();
+        $CI->load->library('url');
+        $CI->load->config('breadcrumb', TRUE);
+        $this->include_home = $CI->config->item('includeHome', 'breadcrumb');
+        $this->container_open = $CI->config->item('containerOpen', 'breadcrumb');
+        $this->container_close = $CI->config->item('containerClose', 'breadcrumb');
+        $this->divider = $CI->config->item('divider', 'breadcrumb');
+        $this->crumb_open = $CI->config->item('crumbOpen', 'breadcrumb');
+        $this->crumb_close = $CI->config->item('crumbClose', 'breadcrumb');
+        if(isset($this->_include_home) && (strlen($this->_include_home) > 0)) {
+          $this->_breadcrumb[] = array('title'=>$this->_include_home, 'href'=>rtrim(base_url(),'/'));
+        }
     }
 
     public function addCrumbs($crumbTitle = NULL, $crumbUrl = '', $segment = FALSE) {
