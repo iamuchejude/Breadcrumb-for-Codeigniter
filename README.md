@@ -7,11 +7,10 @@ _A “breadcrumb” (or “breadcrumb trail”) is a type of secondary navigatio
 * Copy and paste the file in configs/breadcrumb.php and paste it into your app's config folder i.e _project_name/application/config.php_
 * Edit the breadcrumb.php file in the config folder to your test.
   Example of breadcrumb.php configuration script is shown below(Read the comments to know the right values to be assigned):
-  '''
+ ```
     <?php
-      // Configurtion file
-       defined('BASEPATH') or exit('Page access is not allowed');
-       
+        // Configurtion file
+        defined('BASEPATH') or exit('Page access is not allowed');
         $config['includeHome'] = 'Home'; // Title for site/app's first page
         $config['divider'] = '&nbsp;&#62;&nbsp;'; // Crumb divider(default is " > ")
         $config['containerOpen'] = '<div class="breadcrumb">'; // Opening tag for Breadcrumb container
@@ -36,24 +35,27 @@ _A “breadcrumb” (or “breadcrumb trail”) is a type of secondary navigatio
    Setting Breadcrumb params
    ```
     <?php
-      $this->breadcrumb->funcction(); 
-      \/*
+      $this->breadcrumb->addCrumbs('param1', 
+      param2',  'params'3, 'param4'); 
+      \*
       \* The first parameter is 
       \* Second is 
       \* Third is 
-      \*/
+      \*
     ?>
    ```
   After calling that function, you will have to call the showCrumbs() function immediately to show breadcrumb
   ```
     <?php
-      $this->breadcrumb->showCrumbs();
+      $this->breadcrumb->showBreadCrumbs();
     ?>
   ```
   The showCrumbs function does not require any parameter. After calling the function, we are expected to have what is show below
   ```
     <?php
-      $this->breadcrumb->function();
-      $this->breadcrumb->showCrumbs();
+      $this->breadcrumb->addCrumbs(${parameters});
+      $this->breadcrumb->showBreasCumb();
     ?>
   ```
+
+# GUIDE IS CURRENTLY INCOMPLETE
