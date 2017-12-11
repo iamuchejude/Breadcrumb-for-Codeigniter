@@ -25,37 +25,5 @@ _A “breadcrumb” (or “breadcrumb trail”) is a type of secondary navigatio
       $this->load->library('breadcrumb');
     ?>
  ```
-   You can also autoload the library into your project by adding the breadcrumb to the config array from autoload.php in the     application/config folder as shown below
-   ```
-    <?php
-      $autoload['libraries'] = array('breadcrumb');
-     ?>
-   ```
-   If you have carefully followed the steps above, you have successfully set up the breadcrumb for codeigniter library and the commands below are now available for you to us:
-   Setting Breadcrumb params
-   ```
-    <?php
-      $this->breadcrumb->addCrumbs('param1', 
-      param2',  'params'3, 'param4'); 
-      \*
-      \* The first parameter is 
-      \* Second is 
-      \* Third is 
-      \*
-    ?>
-   ```
-  After calling that function, you will have to call the showCrumbs() function immediately to show breadcrumb
-  ```
-    <?php
-      $this->breadcrumb->showBreadCrumbs();
-    ?>
-  ```
-  The showCrumbs function does not require any parameter. After calling the function, we are expected to have what is show below
-  ```
-    <?php
-      $this->breadcrumb->addCrumbs(${parameters});
-      $this->breadcrumb->showBreasCumb();
-    ?>
-  ```
 
 # GUIDE IS CURRENTLY INCOMPLETE
