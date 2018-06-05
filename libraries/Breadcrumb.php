@@ -30,8 +30,8 @@
         $this->crumb_open = $CI->config->item('crumbOpen', 'breadcrumb');
         $this->crumb_close = $CI->config->item('crumbClose', 'breadcrumb');
       
-        if(isset($this->_include_home) && (strlen($this->_include_home) > 0)) {
-          $this->_breadcrumb[] = array('title'=>$this->_include_home, 'href'=>rtrim(base_url(),'/'));
+        if(isset($this->include_home) && (strlen($this->include_home) > 0)) {
+          $this->breadcrumb[] = array('title'=>$this->include_home, 'href'=>rtrim(base_url(),'/'));
         }
     }
 
