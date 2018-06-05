@@ -19,7 +19,7 @@
     public function __construct() {
         $this->CI =& get_instance();
       
-        $this->CI->load->library('url'); // Load Codeigniter URL library file
+        $this->CI->load->helper('url'); // Load Codeigniter URL helper
         $this->CI->load->config('breadcrumb', true); // Load  Breadcrumb's config file
       
         // Set config files
