@@ -7,7 +7,7 @@ _A “breadcrumb” (or “breadcrumb trail”) is a type of secondary navigatio
 * Copy and paste the file in configs/breadcrumb.php and paste it into your app's config folder i.e _project_name/application/config.php_
 * Edit the breadcrumb.php file in the config folder to your test.
   Example of breadcrumb.php configuration script is shown below(Read the comments to know the right values to be assigned):
- ```
+ ```php
     <?php
         // Configurtion file
         defined('BASEPATH') or exit('Page access is not allowed');
