@@ -15,6 +15,14 @@
     private $crumbOpen;
     private $crumbClose;
     private $CI;
+    
+    private $_include_home = 'First page';
+    private $_breadcrumb = array();
+    private $_divider = '&nbsp;&#8250;&nbsp;';
+    private $_container_open = '<div id="breadcrumb">';
+    private $_container_close = '</div>';
+    private $_crumb_open = '';
+    private $_crumb_close = '';
 
     public function __construct() {
         $CI =& get_instance();
