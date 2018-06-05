@@ -28,8 +28,8 @@ The about code will generate the html code below
         <a href="/">Home</a>&nbsp;&#62;&nbsp;<a href="/pages">Pages</a>&nbsp;&#62;&nbsp;<a href="/pages/about">About</a>
     </div>
 ```
-** Output **
-`[Home](/) > [Pages](/pages) > [About](/pages/about)`
+**Output**  
+[Home](/) > [Pages](/pages) > [About](/pages/about)
 
 ## Contributing
 This is an open source project, feel free to create issues, submit pull requests to make corrections, enhance functionality etc
