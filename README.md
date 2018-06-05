@@ -25,13 +25,17 @@ Codeigniter allows you to autoload libraries, configs etc, so you can also autol
 The about code will generate the html code below
 ```html
     <div class="breadcrumb">
-        <a href="/">Home</a>&nbsp;&#62;&nbsp;<a href="/pages">Pages</a>&nbsp;&#62;&nbsp;<a href="/pages/about">About</a>
+        <a href="/">Home</a>&nbsp;&#62;&nbsp;
+        <a href="/pages">Pages</a>&nbsp;&#62;&nbsp;
+        <a href="/pages/about">About</a>
     </div>
 ```
 **Output**  
-[Home](/) > [Pages](/pages) > [About](/pages/about)
+[Home](/) > [Pages](/pages) > [About](/pages/about)  
 
-## Contributing
+*You can also configure the library via the `breadcrumb.php` file in the `application/config` folder. This file allows you to set crumb divider, crumb opening and closing tag, breadcrumb opening and closing tag and crumb for your index page which is usually the homepage*
+
+## Issues and Contribution
 This is an open source project, feel free to create issues, submit pull requests to make corrections, enhance functionality etc
 
 ## How can you support me?
