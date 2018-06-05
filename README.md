@@ -13,13 +13,12 @@ Follow the steps below to setup this library in your project:
 ```php
     $this->load->library('breadcrumb');
 ```
-Codeigniter allows you to autoload libraries, configs etc, so you can also autoload this library by adding 'breadcrumb' to your libraries array in the `config/autoload.php file` of your project
+Codeigniter allows you to autoload libraries, configs etc, so you can also autoload this library by adding `breadcrumb` to your libraries array in the `config/autoload.php` file of your project
 * To generate breadcrumb, call the `add()` method to add crumb and the `show()` method to output the breadcrumb as shown below  
 ```php
     $this->breadcrumb->add('Home', '/');
     $this->breadcrumb->add('Pages', '/pages');
     $this->breadcrumb->add('About', '/pages/about');
-
     $this->breadcrumb->show();
 ```
 The about code will generate the html code below
