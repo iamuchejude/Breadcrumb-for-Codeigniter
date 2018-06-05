@@ -11,7 +11,7 @@
 This is an open source project, feel free to create issues, submit pull requests to make corrections, enhance functionality etc
 
 ## How can you support me?
-That's very easy. Just use the library in your projects, help me share with other and of course, star the repository.
+That's very easy. Just use the library in your projects, help me share with other and of course, star the repository.  
 *You can also follow me on twitter [@iamuchejude](https://twitter.com/iamuchejude). Thank you.*
 
 ## Author
