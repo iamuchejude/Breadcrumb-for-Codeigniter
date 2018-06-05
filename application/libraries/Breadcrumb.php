@@ -35,7 +35,7 @@
         }
     }
 
-    public function addCrumbs($crumbTitle = NULL, $crumbUrl = '', $segment = FALSE) {
+    public function add($crumbTitle = NULL, $crumbUrl = '', $segment = FALSE) {
         // if the method won't receive the $title parameter, it won't do anything to the $_breadcrumb
         if(is_null($crumbTitle)) {
           return " ";
@@ -55,7 +55,7 @@
         $this->breadcrumb[] = array('title' => $title, 'href' => $href);
     }
 
-    public function showBreadcrumb() {
+    public function show() {
       $breadcrumbOutput = $this->containerOpen; // Breadcrumb opening tag
       if(sizeof($this->breadcrumb) > 0) {
         foreach($this->breadcrumb as $key => $crumb) {
