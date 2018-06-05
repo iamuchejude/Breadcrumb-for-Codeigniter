@@ -4,7 +4,7 @@
 
 > Lightweight Codeigniter library for generating HTML breadcrumb
 
-## Installation
+## Usage
 
 
 ## Contributing
