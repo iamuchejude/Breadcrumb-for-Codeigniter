@@ -15,25 +15,21 @@
     private $crumbOpen;
     private $crumbClose;
     private $CI;
-    
-    private $_include_home = 'First page';
-    private $_breadcrumb = array();
-    private $_divider = '&nbsp;&#8250;&nbsp;';
-    private $_container_open = '<div id="breadcrumb">';
-    private $_container_close = '</div>';
-    private $_crumb_open = '';
-    private $_crumb_close = '';
 
     public function __construct() {
-        $CI =& get_instance();
-        $CI->load->library('url');
-        $CI->load->config('breadcrumb', TRUE);
+        $this->CI =& get_instance();
+      
+        $this->CI->load->library('url'); // Load Codeigniter URL library file
+        $this->CI->load->config('breadcrumb', true); // Load  Breadcrumb's config file
+      
+        // Set config files
         $this->include_home = $CI->config->item('includeHome', 'breadcrumb');
         $this->container_open = $CI->config->item('containerOpen', 'breadcrumb');
         $this->container_close = $CI->config->item('containerClose', 'breadcrumb');
         $this->divider = $CI->config->item('divider', 'breadcrumb');
         $this->crumb_open = $CI->config->item('crumbOpen', 'breadcrumb');
         $this->crumb_close = $CI->config->item('crumbClose', 'breadcrumb');
+      
         if(isset($this->_include_home) && (strlen($this->_include_home) > 0)) {
           $this->_breadcrumb[] = array('title'=>$this->_include_home, 'href'=>rtrim(base_url(),'/'));
         }
