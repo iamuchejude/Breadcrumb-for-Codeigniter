@@ -47,4 +47,4 @@ That's very easy. Just use the library in your projects, help me share with othe
 * [twitter/iamuchejude](https://twitter.com/iamuchejude)
 
 ## License
-MIT © [Uche Jude](http://github.com/iamuhejude)
+MIT © [Uche Jude](http://github.com/iamuchejude)
